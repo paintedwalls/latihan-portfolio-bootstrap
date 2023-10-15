@@ -7,6 +7,20 @@
   background-color: #e2edff;
 }
 
+.jumbotron p::before {
+  content: '.';
+  visibility: hidden;
+}
+
+.jumbotron p::after {
+  content: '.';
+  visibility: hidden;
+}
+
+.tex-black {
+  color: #000;
+}
+
 section {
   padding-top: 5rem;
 }
@@ -16,5 +30,5 @@ section {
 }
 
 #gallery .row > * {
-  padding: 0;
+  margin-bottom: 1rem;
 }
