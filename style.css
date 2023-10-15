@@ -32,3 +32,98 @@ section {
 #gallery .row > * {
   margin-bottom: 1rem;
 }
+
+/* My Guitars Section */
+.guitar-box {
+  position: relative;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  height: 500px;
+  /* overflow: hidden; */
+  transform-style: preserve-3d;
+}
+
+.guitar-box::before {
+  content: 'MY';
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  /* left: -100px; */
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.guitar-box:hover::before {
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+  opacity: 0.2;
+}
+
+.guitar-box::after {
+  content: 'GUITAR';
+  position: absolute;
+  color: #fff;
+  font-size: 4.5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  /* left: 450px; */
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.guitar-box:hover::after {
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+  opacity: 0.2;
+}
+
+.guitar-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.guitar-box:hover .guitar-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.guitar-detail-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.guitar-box:hover .guitar-detail-btn {
+  bottom: 18px;
+  opacity: 1;
+}
+
+.guitar-img {
+  position: absolute;
+  top: 53%;
+  left: 53%;
+  transform: translate3d(-53%, -53%, 80px);
+  max-width: 250px;
+}
+
+.guitar-box:hover .guitar-img {
+  transform: translate3d(-53%, -53%, 100px) rotate(5deg) scale(1.2);
+}

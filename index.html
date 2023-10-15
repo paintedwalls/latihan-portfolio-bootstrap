@@ -129,6 +129,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-guitar">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Guitars</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="guitar-box">
+                <h4 class="guitar-name">Fender American Vintage II 1975 Telecaster Deluxe</h4>
+                <img src="./img/guitars/fender.png" alt="Guitar Accoustic" class="guitar-img" />
+                <a href="https://www.fender.com/en-US/electric-guitars/telecaster/american-vintage-ii-1975-telecaster-deluxe/0110332806.html" target="_" class="btn btn-light guitar-detail-btn">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="guitar-box">
+                <h4 class="guitar-name">Cowboy GWC 235</h4>
+                <img src="./img/guitars/cowboy.png" alt="Guitar Accoustic" class="guitar-img" />
+                <a href="https://www.tokopedia.com/cowboymusic/gitar-akustik-elektrik-cowboy-gwc-235-na-original?extParam=src%3Dshop%26whid%3D5505374" class="btn btn-light guitar-detail-btn" target="_">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="guitar-box">
+                <h4 class="guitar-name">Gibson 1957 Les Paul Custom Reissue</h4>
+                <img src="./img/guitars/gibson.png" alt="Guitar Accoustic" class="guitar-img" />
+                <a href="https://www.gibson.com/en-US/Electric-Guitar/CUSGJ5555/Ebony-2-Pickup" class="btn btn-light guitar-detail-btn" target="_">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -251,7 +285,7 @@
 
     <!-- Start Footer -->
     <footer class="bg-primary text-white text-center pb-3">
-      <p>Created with 💖 by <a href="https://www.instagram.com/nurhidayat.riki/" class="text-white fw-bold">Riki Muhammad Nurhidayat</a></p>
+      <p>Created with 🔥 by <a href="https://www.instagram.com/nurhidayat.riki/" class="text-white fw-bold">Riki Muhammad Nurhidayat</a></p>
     </footer>
     <!-- End Footer -->
 
@@ -306,6 +340,15 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.guitar-box'), {
+        max: 35,
+        speed: 1000,
+        scale: 1.1,
+        glare: true,
       });
     </script>
   </body>
